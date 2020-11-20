@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import MainSection from './components/sections/MainSection'
-import BodySection from './components/sections/BodySection'
-import FooterSection from './components/sections/FooterSection'
+import MainSection from './sections/MainSection'
+import BodySection from './sections/BodySection'
+import FooterSection from './sections/FooterSection'
 
 const Wrap = styled.main`
   display:flex;
