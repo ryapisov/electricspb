@@ -1,0 +1,6 @@
+export { default as BigButton } from './BigButton/BigButton'
+export { default as MainTitle } from './TextBlocks/MainTitle/MainTitle'
+export { default as Phone } from './TextBlocks/Phone/Phone'
+export { default as Email } from './TextBlocks/Email/Email'
+export { default as Name } from './TextBlocks/Name/Name'
+export { default as Info } from './TextBlocks/Info/Info'
