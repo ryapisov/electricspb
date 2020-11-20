@@ -1,10 +1,12 @@
-import VideoBanner from '../components/VideoBanner'
-import TextBlock from '../components/TextBlock'
+import React from 'react'
+import VideoBanner from '../components/VideoBanner/Video'
+import TextBlock from '../components/TextBlock/TextBlock'
 
 export default ()=>{
+
   return (
-    <>
-      <TextBlock w="222" h="300" r="6" size="24" top="33" left="22" >
+    <>1abc
+      <TextBlock w={'444'} h="300" r="6" size="24" top="33" left="22" >
         электрик
       </TextBlock>
       <VideoBanner />

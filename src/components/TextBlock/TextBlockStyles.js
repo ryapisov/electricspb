@@ -1,7 +1,12 @@
 import styled from 'styled-components'
-import { device } from '../device/breakpoint'
 
-const Wrap = styled.div`
+const media = {
+  desktop: '@media(min-width:2560px)'
+}
+
+// ${media.desktop}{}
+
+export const Wrap = styled.div`
   position:absolute;
   overflow:hidden;
   background-color: rgba(0, 0, 30, 0.${ p=> p.opacity ? p.opacity : 2});
@@ -15,36 +20,9 @@ const Wrap = styled.div`
   z-index:5;
 `
 
-const Text = styled.div`
+export const Text = styled.div`
   font-family: 'Russo One', sans-serif;
   -webkit-text-stroke: 1px black;
   font-size: ${ p => p.size + 'px' };
   color: ${ p => p.color ? p.color : '#fff' };
 `
-
-export default (props)=>{
-  const {
-    children, size, color, w, h,
-    bgColor, left, top, p, r, opacity
-  } = props
-
-  return(
-    <Wrap 
-      width={w}
-      height={h}
-      padding={p}
-      radius={r}
-      bgColor={bgColor}
-      top={top}
-      left={left}
-      opacity={opacity}
-      >
-      <Text 
-        size={size} 
-        color={color}
-      >
-        {children}
-     </Text>
-    </Wrap>
-  )
-}

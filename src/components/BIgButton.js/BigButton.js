@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { device } from '../device/breakpoint'
+import { device } from '../../device/breakpoint'
 
 const BigButton = styled.button`
   position:absolute;
