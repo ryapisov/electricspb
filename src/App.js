@@ -7,12 +7,13 @@ import FooterSection from './sections/FooterSection'
 const Wrap = styled.main`
   display:flex;
   flex-direction:column;
+  box-sizing:border-box;
 `
 
 const Main = styled.section`
-  background: #591;
   position:relative;
   height:100vh;
+  width:100wh;
 `
 
 const Body = styled.section`
