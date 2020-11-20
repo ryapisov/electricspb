@@ -1,12 +1,16 @@
 import styled from 'styled-components'
-import music from '../music/ppk.mp3'
-import { device } from '../../device/breakpoint'
+import { Audio } from './AudioStyles'
+import music from '../../music/ppk.mp3'
 
+export default (props)=>{
+  const { t, l } = props
 
-const Audio = styled.div`
-
-`
-
-export default ({children})=>{
-  return <Audio>{children}</Audio>
+  return( 
+    <>
+      <Audio  top={t} left={l}/>
+      <audio controls="controls" style={{display:'none'}}>
+        <source src={music} type="audio/mpeg"/>
+      </audio>
+    </>
+  )
 }

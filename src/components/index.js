@@ -1,3 +1,4 @@
+export { default as Audio } from './Audio/Audio'
 export { default as BigButton } from './BigButton/BigButton'
 export { default as MainTitle } from './TextBlocks/MainTitle/MainTitle'
 export { default as Phone } from './TextBlocks/Phone/Phone'

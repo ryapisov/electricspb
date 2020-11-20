@@ -1,6 +1,6 @@
 import React from 'react'
 import VideoBanner from '../components/VideoBanner/Video'
-import { MainTitle, Phone, Email, Info, Name, BigButton } from '../components'
+import { MainTitle, Phone, Email, Info, Name, BigButton, Audio } from '../components'
 
 export default ()=>{
 
@@ -32,6 +32,7 @@ export default ()=>{
         gremm87@yandex.ru
       </Email>
       
+      <Audio  t="15" l="15" />
     </>
   )
 }
