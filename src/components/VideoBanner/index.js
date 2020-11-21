@@ -1,15 +1,13 @@
-import { Video } from './styles'
 import video from '../../videos/720.mp4'
+import { Video } from './styles'
 
-export default ()=>{
+export const VideoBanner = () =>{
   return (
-    <>
-      <Video 
-        src={video} 
-        autoPlay 
-        muted 
-        loop>
-      </Video>
-    </>
+    <Video
+      src={video} 
+      autoPlay 
+      muted 
+      loop>
+    </Video>
   )
 }

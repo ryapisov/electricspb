@@ -1,6 +1,6 @@
 import { Wrap } from './styles'
 
-export default () => {
+export const SectionFooter = () => {
   return (
     'FOOTER'
   )

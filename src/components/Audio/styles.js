@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Audio = styled.div`
+export const Audios = styled.div`
   position:absolute;
   top:${ p => 10 * p.top + 'px' };
   left:${ p => 10 * p.left + 'px' };

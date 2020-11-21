@@ -1,52 +1,78 @@
 import React from 'react'
-import { MainTitle, Phone, Email, Info, Name, BigButton, Audio, VideoPlayer, VideoBanner } from '../../components'
-import { Wrap } from './styles'
+import { Text,Button, Triangle, VideoPlayer, VideoBanner } from '../../components'
+import { Wrap, VideoWrap, VideoBannerWrap, WrapText } from './styles'
 
-export default () => {
+export const SectionMain = () => {
   const [onVideo, setOnVideo] = React.useState(false)
   
   return (
     <Wrap>
-    { onVideo ?  <VideoPlayer/> :
-       <>
-        <VideoBanner />
+    { onVideo ? 
+      <>
+      {/* Component */}
+      <VideoWrap>
+        <VideoPlayer/> 
+      </VideoWrap> 
+      </>
+     :
+        <>
+        {/* Component */}
+        <VideoBannerWrap>
+          <VideoBanner />
+        </VideoBannerWrap>
+       
+        {/* Component */}
+        <WrapText>
+          <Triangle/>
+        </WrapText>
+        
+        {/* Component */}
+        <WrapText left="70" top="490">
+          <Text opacity="1" size="7" kontur>
+            ЭЛЕКТРИК СПБ
+          </Text>
+        </WrapText>
 
-        <MainTitle size="3" padding="0.3" opacity="2" t="50" l="5">
-          ЭЛЕКТРИК СПБ
-        </MainTitle>
+        {/* Component */}
+        <WrapText left="822" top="233">
+          <Text opacity="2">
+          {/* Александр Иванов */}
+          </Text>
+        </WrapText>
 
-        <Name size="1" padding="0.5"  t="43" l="10">
-          Александр Иванов
-        </Name>
+        {/* Component */}
+        <WrapText left="992" top="33">
+          <Text opacity="9" size="2">
+            +7 965 046-59-39
+          </Text>
+        </WrapText>
 
-        <BigButton size="1" padding="0.5" opacity="3" t="20" l="100" onClick={ () => setOnVideo(true) }>
-          Видео работ
-        </BigButton>
+        {/* Component */}
+        <WrapText left="285" top="240">
+          <Button big onClick={ () => setOnVideo(true) }>
+            Видео работ
+          </Button>
+        </WrapText>
 
-        <Phone size="1" padding="0.5" opacity="3" t="8" l="100">
-          +7 965 046-59-39
-        </Phone>
-
-        <Email size="1" padding="0.5" opacity="3" t="20" l="100">
-          gremm87@yandex.ru
-        </Email>
-
-        <Audio  t="15" l="15" />
-
-
-
-
-       </>
-    }
-
-   
-
-
-
+        {/* Component */}
+        <WrapText left="992" top="103">
+          <Text opacity="4" size="1.3">
+            gremm87@yandex.ru
+          </Text> 
+        </WrapText>
     
+        {/* Component */}
+        <WrapText left="20" top="125" z="6" angle="-45">
+          <Text opacity="9" size="1.3" >
+            Гарантия от 5 лет.
+          </Text> 
+        </WrapText>
 
-
+      </>
+    }
 
   </Wrap>
   )
 }
+
+

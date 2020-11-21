@@ -2,11 +2,10 @@ import styled from 'styled-components'
 
 export const Video = styled.video`
   position:absolute;
+  left:0;
+  top:0;
   width:100%;
   height:auto;
-  left: 0;
-  top: 0;
-  z-index: -2;
 `
 
 export const Filter = styled.div`

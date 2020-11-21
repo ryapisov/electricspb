@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Normalize } from 'styled-normalize'
-import {SectionMain, SectionBody, SectionFooter} from './sections'
+import { SectionMain, SectionBody, SectionFooter } from './sections'
 
 const Wrap = styled.main`
   display:flex;
