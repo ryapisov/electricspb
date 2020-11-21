@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Audio } from './AudioStyles'
+import { Audio } from './styles'
 import music from '../../music/ppk.mp3'
 
 export default (props)=>{

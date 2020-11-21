@@ -1,4 +1,4 @@
-import { Wrap } from './EmailStyles'
+import { Wrap } from './styles'
 
 export default (props)=>{
   const {

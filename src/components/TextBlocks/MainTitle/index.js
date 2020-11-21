@@ -1,4 +1,4 @@
-import { Wrap } from './NameStyles'
+import { Wrap } from './styles'
 
 export default (props)=>{
   const {

@@ -1,4 +1,4 @@
-import { Video } from './VideoStyles'
+import { Video } from './styles'
 import video from '../../videos/720.mp4'
 
 export default ()=>{

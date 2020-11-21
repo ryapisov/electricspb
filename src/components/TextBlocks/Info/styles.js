@@ -11,12 +11,13 @@ export const Wrap = styled.div`
   -webkit-text-stroke: 1px black;
   color: #fff;
   z-index:5;
+  width:100%;
 
   ${media.desktop}{}
 
   ${media.laptopL}{
     font-size: ${ p => 2 * p.size + 'rem' };
-    padding: ${ p => 2 * p.padding + 'rem' };
+    padding: ${ p =>  p.padding };
     top:${ p => 10 * p.top + 'px' };
     left:${ p => 10 * p.left + 'px' };
   }

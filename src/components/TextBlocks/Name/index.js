@@ -1,4 +1,4 @@
-import { Wrap } from './PhoneStyles'
+import { Wrap } from './styles'
 
 export default (props)=>{
   const {
