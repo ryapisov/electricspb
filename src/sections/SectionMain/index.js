@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text,Button, Triangle, VideoPlayer, VideoBanner } from '../../components'
+import { Text,Button, Triangle, VideoPlayer, VideoBanner, Logo } from '../../components'
 import { Wrap, VideoWrap, VideoBannerWrap, WrapText } from './styles'
 
 export const SectionMain = () => {
@@ -63,9 +63,14 @@ export const SectionMain = () => {
     
         {/* Component */}
         <WrapText left="20" top="125" z="6" angle="-45">
-          <Text opacity="9" size="1.3" >
+          <Text opacity="3" size="1.3" >
             Гарантия от 5 лет.
           </Text> 
+        </WrapText>
+
+        {/* Component */}
+        <WrapText left="10" top="15" z="6" angle="-45">
+          <Logo />
         </WrapText>
 
       </>

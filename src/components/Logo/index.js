@@ -1,4 +1,6 @@
 import { Img } from './styles'
+import image from '../../images/logo.png'
+
 export const Logo = () => {
-  return <Img />
+  return <Img url={image} />
 }
