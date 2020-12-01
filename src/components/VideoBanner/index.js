@@ -1,4 +1,4 @@
-import video from '../../videos/720.mp4'
+import video from '../../static/videos/720.mp4'
 import { Video } from './styles'
 
 export const VideoBanner = () =>{

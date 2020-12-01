@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Audios } from './styles'
-import music from '../../music/ppk.mp3'
+import music from '../../static/music/ppk.mp3'
 
 export const Audio = (props) => {
   const { t, l } = props
