@@ -28,7 +28,7 @@ export const SectionMain = () => {
         
         {/* Component */}
         <WrapText left="70" top="490">
-          <Text opacity="1" size="7" kontur>
+          <Text opacity="2" size="7" kontur>
             ЭЛЕКТРИК СПБ
           </Text>
         </WrapText>

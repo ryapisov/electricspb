@@ -8,12 +8,12 @@ export const VideoPlayer = () =>{
 
   return (
     <Wrap>
-      <HeaderWrap>
+     {/* <HeaderWrap>
         <Button className="mr" onClick={()=> setOnPlay(prev => !prev)}>
           { onPlay ?  'Остановить' : 'Продолжить' }
         </Button>
         <Button className="mr" onClick={()=>alert()}>Закрыть</Button>
-      </HeaderWrap>
+  </HeaderWrap> */}
 
       <ReactPlayer 
         url='https://youtu.be/r4supD4BvHc' 
@@ -23,9 +23,9 @@ export const VideoPlayer = () =>{
         playing={onPlay}
       />
 
-      <FooterWrap>
+    {/*  <FooterWrap>
         footer
-      </FooterWrap>
+    </FooterWrap> */}
     </Wrap>
     
   )
